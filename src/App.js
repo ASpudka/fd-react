@@ -1,21 +1,16 @@
-import React from 'react';
-import Ciao from './components/ciao/ciao'
-import './App.css';
-import MyLink from './components/myLink';
+import React from "react";
+import "./App.css";
+import UsersDashbord from './components/UsersDashbord';
+import CiaoSection from './components/CiaoDashbord/CiaoSection';
 
-function App() {
-  const user = {
-    id : 1,
-    firstName: 'Elon',
-    LastName: "Musk"
-  }
-  return (<React.Fragment>
-    <h1 className = 'heading' title ='react'>Hi!</h1>
-    <Ciao fname = 'Alex' sname = 'Asdf' />
-    <Ciao fname = 'Masha'/>
-    <Ciao fname = { user.firstName}/>
-    <MyLink className = 'my-link' href='#'/>
-    </React.Fragment>)
-}
+
+const App = () => {
+  return (
+    <>
+      <UsersDashbord />
+      <CiaoSection />
+    </>
+  );
+};
 
 export default App;
