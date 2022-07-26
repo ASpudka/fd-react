@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SelectUsersList from '../SelectUsersList';
-import UsersList from '../UsersList';
+import SelectUsersList from './SelectUsersList';
+import UsersList from './UsersList';
 const usersDB = [
   {
     id: 4,
