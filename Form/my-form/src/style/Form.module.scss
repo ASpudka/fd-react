@@ -1,0 +1,10 @@
+.container{
+  width: 200px;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(192, 189, 189);
+}
+.container>*{
+  margin: 10% 0;
+}

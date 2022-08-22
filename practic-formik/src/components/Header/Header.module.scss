@@ -1,0 +1,17 @@
+
+.container{
+  margin: 10% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  padding: 1% 2%;
+  border: 1px solid white;
+  border-radius: 5%;
+  background-color: inherit;
+ ;
+}
+
+.btn>*{
+  color: white
+}

@@ -1,0 +1,16 @@
+.wrapper{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+ background-color: teal;
+ color: white;
+ font-family: Georgia, 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ text-align: center;
+ .dayweek{
+  font-size: 2em;
+}
+.daymonth{
+  margin: 0;
+  font-size: 10em;
+}
+}

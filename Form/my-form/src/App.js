@@ -1,14 +1,17 @@
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import LogInForm from "./components/LogInForm";
 
-import CallMy from './components/CallMy';
-import SingInForm from './components/form';
+const App = () => {
+  const onSubmit = (values, formikBag) => {
+    formikBag.resetForm();
+  };
 
-function App() {
-  return (
-    <>
-   <SingInForm/>
-   <CallMy/>
-   </>
-  );
-}
+  return <BrowserRouter>
+    
+      <LogInForm onSubmit={onSubmit} />
+    
+    </BrowserRouter>
+};
 
 export default App;
