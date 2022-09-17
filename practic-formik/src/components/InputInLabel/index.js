@@ -6,7 +6,7 @@ import cx from "classnames";
 const InputInLabel = (props) => {
   const { name, ...restProps } = props;
   return (
-    <label>
+    <label className={styles.input}>
       <Field name={name}>
         {({ field, form, meta }) => {
           const inputClasses = cx(styles.input, {
@@ -15,7 +15,7 @@ const InputInLabel = (props) => {
           return <input {...field} className={inputClasses} {...restProps} />;
         }}
       </Field>
-      <ErrorMessage name={name} component="div" className={styles.error} />
+      <ErrorMessage name={[name]} component="div" className={styles.error} />
     </label>
   );
 };

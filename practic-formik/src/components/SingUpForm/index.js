@@ -16,7 +16,7 @@ const SingUpForm = () => {
     <Formik
       initialValues={initialValues}
       onSubmit={onSubmit}
-      validateSchemas={[SCHEMA_SIGN_IN]}
+      validationSchema={SCHEMA_SIGN_IN}
     >
       {(formikProps) => {
         return (
@@ -31,7 +31,7 @@ const SingUpForm = () => {
               type="password"
               placeholder="Password"
             />
-            <input type="submit" />
+            <input type="submit" className={styles.btn}/>
           </Form>
         );
       }}

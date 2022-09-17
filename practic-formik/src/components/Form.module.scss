@@ -1,4 +1,25 @@
-.container{
+.container {
+ 
   display: flex;
   flex-direction: column;
+  text-align: center;
+  
+  }
+
+  
+  .radio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+  color: white;
+  }
+  .radio>p{
+    flex-wrap: nowrap;
+  }
+.btn{
+  width: 27%;
+  align-self: center;
+  padding: 1%;
+  background-color: rgb(95, 232, 241);
 }

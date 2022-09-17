@@ -1,9 +1,19 @@
-.error{
-  border: 1px solid red;
-}
+
 .input{
+  position: relative;
   padding: 1%;
   margin: 1%;
+  
+}
+.error{
+  width: 200px;
+  position: absolute;
+  batton:5;  left:0;
+
+  background-color: white;
+  border: 1px solid red;
+  
+
 }
 .invalid{
   border: 1px solid red;
