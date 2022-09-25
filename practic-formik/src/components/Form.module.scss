@@ -3,23 +3,45 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  
-  }
+ 
+    }
+  .container>div{
+    margin: 1%;
 
+  }
+  
+.wrapper{
+  display: flex;
+  flex-direction:row;
+  flex-basis:content;
+  justify-content: left;
+  align-items: center;
+
+width: 430px;
+border: solid 1px white;
+margin: 1% auto;
+color: white;
+ p{
+ 
+ }
+}
   
   .radio{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: auto;
-  color: white;
+   
   }
-  .radio>p{
-    flex-wrap: nowrap;
+  .radioInfo{
+    flex-grow: 2;
+    margin: 1% 2%;
+    text-align: left;
   }
+  .radioInfo>*{
+    margin: 0;
+  }
+  
 .btn{
-  width: 27%;
+  width: 210px;
+  height: 40px;
   align-self: center;
-  padding: 1%;
+ 
   background-color: rgb(95, 232, 241);
 }

@@ -21,17 +21,19 @@ const SingUpForm = () => {
       {(formikProps) => {
         return (
           <Form className={styles.container}>
+            <div >
             <InputInLabel
               name="email"
               type="email"
               placeholder="Email Address"
-            />
+            /></div>
+            <div>
             <InputInLabel
               name="password"
               type="password"
               placeholder="Password"
-            />
-            <input type="submit" className={styles.btn}/>
+            /></div>
+            <input type="submit"  className={styles.btn}/>
           </Form>
         );
       }}

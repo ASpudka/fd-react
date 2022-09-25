@@ -11,8 +11,8 @@ const RegistrationForm = () => {
     dname: "",
     email: "",
     password: "",
-    passwordconfirm: "",}
-  ;
+    passwordconfirm: "",
+  };
   const onSubmit = (values, formikBag) => {
     formikBag.resetForm();
   };
@@ -53,16 +53,34 @@ const RegistrationForm = () => {
                 placeholder="Password Confirmation"
               />
             </div>
-            <div className={styles.radio}>
-              <InputInLabel type="radio" value="0" />
-              <h2>Join As a Buyer</h2>
-              <p> I am looking for a Name</p>
-            </div>
-            <div className={styles.radio}>
-              <InputInLabel type="radio" value="0" />
-              <h2>Join As sa Creative or Marketplace Seller</h2>
-              <p>gjhnghjfgkdms</p>
-            </div>
+
+            <section className={styles.wrapper}>
+              <div className={styles.radio}>
+                <InputInLabel type="radio" value="0" />
+              </div>
+              <div className={styles.radioInfo}>
+                <h3>Join As a Buyer </h3>
+                <p>
+                  {" "}
+                  I am looking for a Name, Logo or Tagline for my business, brad
+                  or product.
+                </p>{" "}
+              </div>
+            </section>
+
+            <section className={styles.wrapper}>
+              <div className={styles.radio}>
+                <InputInLabel type="radio" value="0" />{" "}
+              </div>
+              <div className={styles.radioInfo}>
+                <h3>Join As sa Creative or Marketplace Seller</h3>
+                <p>
+                  I plan to submit name ideas. Logo designs or sell names in
+                  Domain Marcketplace.
+                </p>{" "}
+              </div>
+            </section>
+
             <input type="submit" className={styles.btn} />
           </Form>
         );

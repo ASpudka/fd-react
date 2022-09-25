@@ -2,13 +2,12 @@
 .input{
   position: relative;
   padding: 1%;
-  margin: 1%;
-  
+   
 }
 .error{
   width: 200px;
   position: absolute;
-  batton:5;  left:0;
+ top:1.75em;  left: 0; z-index:1;
 
   background-color: white;
   border: 1px solid red;

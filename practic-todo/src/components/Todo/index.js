@@ -4,11 +4,17 @@ import Forma from '../Form';
 import ListTask from '../ListTask';
 
 const Todo = () => {
- 
+  const { tasks, deleteTask, addTask } = useTodo([
+    {
+      id: Date.now(),
+      body: "test task",
+      isDone: false,
+    },
+  ]);
   return (
     <div>
-      <Forma/>
-      <ListTask/>
+      <Forma addTask={addTask}/>
+      <ListTask tasks={tasks} deleteTask= {deleteTask} />
      </div>
   );
 }
